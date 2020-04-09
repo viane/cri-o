@@ -147,7 +147,7 @@ Bucket][bucket]. This means that the latest master commit can be downloaded via:
 [bucket]: https://console.cloud.google.com/storage/browser/k8s-conform-cri-o/artifacts
 
 ```shell
-> curl -f https://storage.googleapis.com/k8s-conform-cri-o/artifacts/crio-$(git ls-remote https://github.com/cri-o/cri-o master | cut -c1-9).tar.gz -o crio.tar.gz
+> curl -f https://storage.googleapis.com/k8s-conform-cri-o/artifacts/crio-$(git ls-remote https://github.com/cri-o/cri-o master | cut -c1-9.tar.gz -o crio.tar.gz
 ```
 
 ### Running kubernetes with CRI-O
